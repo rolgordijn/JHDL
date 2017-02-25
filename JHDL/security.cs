@@ -7,12 +7,20 @@ using System.Threading.Tasks;
 
 namespace JHDL
 {
+    /// <summary>
+    /// This file contains a method to decrypt and one to encrypt strings, so one can't simply discover all the data stored in files on the pc, when (s)he doesn't have acces to the data where it's used in the software.
+    /// Maybe it's not super safe, but good enough for it's purpose. 
+    /// </summary>
     public static class Security
     {
         private static string Key = "dofkrfaosrdedofkrfaosrdedofkrfao";
         private static string IV = "zxcvbnmdfrasdfgh";
 
-
+        /// <summary>
+        /// This method takes a string as input and uses AES to decrypt it. 
+        /// </summary>
+        /// <param name="text">The string to be encrypted</param>
+        /// <returns></returns>
         public static string Encrypt(string text)
         {
             byte[] plaintextbytes = System.Text.ASCIIEncoding.ASCII.GetBytes(text);
@@ -29,6 +37,12 @@ namespace JHDL
             return Convert.ToBase64String(encrypted);
         }
 
+
+        /// <summary>
+        /// When a string is encrypted, we also need to decrypt it. This method will decrypt strings that were encrypted with the Encrypt method. 
+        /// </summary>1
+        /// <param name="encrypted">The string that needs to be decrypted</param>
+        /// <returns></returns>
         public static string Decrypt(string encrypted)
         {
             byte[] encryptedbytes = Convert.FromBase64String(encrypted);

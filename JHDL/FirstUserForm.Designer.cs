@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirstUserForm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.createFirstUserAccount = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,15 +41,15 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // createFirstUserAccount
             // 
-            this.button1.Location = new System.Drawing.Point(145, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Maak nieuw account!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.createFirstUserAccount.Location = new System.Drawing.Point(145, 119);
+            this.createFirstUserAccount.Name = "createFirstUserAccount";
+            this.createFirstUserAccount.Size = new System.Drawing.Size(177, 23);
+            this.createFirstUserAccount.TabIndex = 0;
+            this.createFirstUserAccount.Text = "Maak nieuw account!";
+            this.createFirstUserAccount.UseVisualStyleBackColor = true;
+            this.createFirstUserAccount.Click += new System.EventHandler(this.createFirstUser);
             // 
             // label1
             // 
@@ -77,7 +77,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.createFirstUserAccount);
             this.groupBox1.Location = new System.Drawing.Point(12, 114);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(357, 157);
@@ -146,7 +146,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createFirstUserAccount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;

@@ -7,9 +7,9 @@ using System.Collections.Generic;
 
 namespace JHDL
 {
-    public partial class Form1 : Form
+    public partial class JHDL : Form
     {
-        public Form1()
+        public JHDL()
         {
             InitializeComponent();
         }

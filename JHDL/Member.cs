@@ -212,11 +212,18 @@ namespace JHDL
             this.ID = iD;
         }
 
+
+        /// <summary>
+        /// This constructor is used to create the first user account. Only the name and password are required in the "FirstUserForm.cs".    
+        /// (S)he will obtain the highest permission possible. 
+        /// </summary>
+        /// <param name="name">The name of the first user</param>
+        /// <param name="password">The password that's required to </param>
         public Member(String name, string password)
         {
             Name = name;
             Password = password;
-            birthday = new DateTime(2000, 1, 1);
+            birthday = new DateTime(2000, 1, 1); // temporary birthday value 
             iD = getNewId();
             members.Add(name, this);
             memberPermissions = MemberPermissions.Beheerder;
@@ -231,7 +238,11 @@ namespace JHDL
 
 
 
-
+        /// <summary>
+        /// Each member has a unique ID that we use to identify. The barcode uses this ID. 
+        /// The ID is based on the year, month, day, hour and a unique ID that counts how many members that are registred. 
+        /// </summary>
+        /// <returns></returns>
         public static long getNewId()
         {
             int year = DateTime.Now.Year;

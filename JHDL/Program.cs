@@ -35,14 +35,14 @@ namespace JHDL
                     Application.Run(new LoginForm());
                     }
                     else{
-                        Application.Run(new Form1());
+                        Application.Run(new JHDL());
                     }
                 }
                 else
                 {
                     Form fuf = new FirstUserForm();
                     fuf.ShowDialog();
-                    Application.Run(new Form1());
+                    Application.Run(new JHDL());
 
                 }
             }

@@ -31,7 +31,7 @@ namespace JHDL
                 }
                 else
                 {
-                    Form1 main = new Form1();
+                    JHDL main = new JHDL();
                     this.Hide();
                     Thread.Sleep(200);
                     main.Show();

@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace JHDL
 {
+    /// <summary>
+    /// Firstuserform: this form will be displayed when the program is executed for the first time. This will allow the user to create a user account that he or she can use to login.
+    /// Further account details can later be added with the software. 
+    /// </summary>
     public partial class FirstUserForm : Form
     {
         public FirstUserForm()
@@ -17,7 +21,7 @@ namespace JHDL
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createFirstUser(object sender, EventArgs e)
         {
             if (passWordBox.Text.Equals(checkPassWordBox.Text))
             {

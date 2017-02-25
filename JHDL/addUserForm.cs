@@ -25,6 +25,9 @@ namespace JHDL
 
         }
 
+        /// <summary>
+        /// Initialise form. Add the enumerators for gender, permissions and all the members to the corresponding listboxes. 
+        /// </summary>
         private void loadForm()
         {
             genderField.DataSource = Enum.GetValues(typeof(Gender));
@@ -86,7 +89,10 @@ namespace JHDL
         }
 
      
-
+        /// <summary>
+        /// This method checks the input of the new/edit user form with regex. 
+        /// </summary>
+        /// <returns> returns true when all the Regex in this method matches with the input, otherwise it will return false</returns>
         private bool validateData()
         {
             String name = nameField.Text;
@@ -148,20 +154,15 @@ namespace JHDL
         }
 
         /// <summary>
-        /// 
+        /// This method will initialise the fields in the new/edit user form when a 
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void setInitialData(object sender, EventArgs e)
+       private void setInitialData(object sender, EventArgs e)
         {
             if (memberListBox.Enabled)
             {
                 KeyValuePair<String, Member> kvpm = (KeyValuePair<String, Member>)memberListBox.SelectedItem;
                 Member m = kvpm.Value;
                 nameField.Text = m.Name;
-                /* Random R = new Random();
-                 int a = R.Next(97, 122);
-                 nameField.AppendText(((char) a).ToString());*/
                 MembershipCardNameField.Text = ("lidkaart van " + m.Name);
                 emailField.Text = m.Email;
                 passWordField.Text = m.Password;
@@ -216,6 +217,9 @@ namespace JHDL
 
         }
 
+        /// <summary>
+        /// This function will be executed when the user wants to print a label for a membership card 
+        /// </summary>
         private void printMembershipCardLabelButton_Click(object sender, EventArgs e)
         {
             PrintDialog printDialog1 = new PrintDialog();
@@ -250,8 +254,6 @@ namespace JHDL
 
         private void document_PrintPage(object sender,  PrintPageEventArgs e)
         {
-
-
 
             // Insert code to render the page here.
             // This code will be called when the control is drawn.

@@ -1,6 +1,6 @@
 ﻿namespace JHDL
 {
-    partial class Form1
+    partial class JHDL
     {
         /// <summary>
         /// Required designer variable.
