@@ -14,7 +14,7 @@ namespace JHDL
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void mainForm_load(object sender, EventArgs e)
         {
        
             if (File.Exists("membervariables.dat"))
@@ -68,6 +68,11 @@ namespace JHDL
              
                 //Log exception here
             }
+        }
+
+        private void overToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("JHDL Software \n\n\n\rdirectory:"+ Application.StartupPath + "\r\nversie: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
         }
     }
 }

@@ -35,6 +35,8 @@
             this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ledenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestandToolStripMenuItem,
-            this.beheerToolStripMenuItem});
+            this.beheerToolStripMenuItem,
+            this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1019, 24);
@@ -83,27 +86,42 @@
             this.ledenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toevoegenToolStripMenuItem});
             this.ledenToolStripMenuItem.Name = "ledenToolStripMenuItem";
-            this.ledenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ledenToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.ledenToolStripMenuItem.Text = "Leden";
             // 
             // toevoegenToolStripMenuItem
             // 
             this.toevoegenToolStripMenuItem.Name = "toevoegenToolStripMenuItem";
-            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.toevoegenToolStripMenuItem.Text = "Beheer leden";
             this.toevoegenToolStripMenuItem.Click += new System.EventHandler(this.toevoegenToolStripMenuItem_Click);
             // 
-            // Form1
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.overToolStripMenuItem});
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.infoToolStripMenuItem.Text = "Info";
+            // 
+            // overToolStripMenuItem
+            // 
+            this.overToolStripMenuItem.Name = "overToolStripMenuItem";
+            this.overToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.overToolStripMenuItem.Text = "Over";
+            this.overToolStripMenuItem.Click += new System.EventHandler(this.overToolStripMenuItem_Click);
+            // 
+            // JHDL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1019, 502);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "JHDL";
             this.Text = "JHDL ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.mainForm_load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -119,6 +137,8 @@
         private System.Windows.Forms.ToolStripMenuItem beheerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ledenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem overToolStripMenuItem;
     }
 }
 

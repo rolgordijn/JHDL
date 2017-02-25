@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JHDL</name>
+    </assembly>
+    <members>
+        <member name="T:JHDL.FirstUserForm">
+            <summary>
+            Firstuserform: this form will be displayed when the program is executed for the first time. This will allow the user to create a user account that he or she can use to login.
+            Further account details can later be added with the software. 
+            </summary>
+        </member>
+        <member name="F:JHDL.FirstUserForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JHDL.FirstUserForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JHDL.FirstUserForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:JHDL.JHDL.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JHDL.JHDL.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JHDL.JHDL.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.loadForm">
+            <summary>
+            Initialise form. Add the enumerators for gender, permissions and all the members to the corresponding listboxes. 
+            </summary>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.validateData">
+            <summary>
+            This method checks the input of the new/edit user form with regex. 
+            </summary>
+            <returns> returns true when all the Regex in this method matches with the input, otherwise it will return false</returns>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.setInitialData(System.Object,System.EventArgs)">
+            <summary>
+            This method will initialise the fields in the new/edit user form when a 
+            </summary>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.printMembershipCardLabelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This function will be executed when the user wants to print a label for a membership card 
+            </summary>
+        </member>
+        <member name="F:JHDL.Leden_Toevoegen.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JHDL.Leden_Toevoegen.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:JHDL.LoginForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JHDL.LoginForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JHDL.LoginForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:JHDL.Member.#ctor(System.String,System.String)">
+            <summary>
+            This constructor is used to create the first user account. Only the name and password are required in the "FirstUserForm.cs".    
+            (S)he will obtain the highest permission possible. 
+            </summary>
+            <param name="name">The name of the first user</param>
+            <param name="password">The password that's required to </param>
+        </member>
+        <member name="M:JHDL.Member.getNewId">
+            <summary>
+            Each member has a unique ID that we use to identify. The barcode uses this ID. 
+            The ID is based on the year, month, day, hour and a unique ID that counts how many members that are registred. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:JHDL.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:JHDL.Security">
+            <summary>
+            This file contains a method to decrypt and one to encrypt strings, so one can't simply discover all the data stored in files on the pc, when (s)he doesn't have acces to the data where it's used in the software.
+            Maybe it's not super safe, but good enough for it's purpose. 
+            </summary>
+        </member>
+        <member name="M:JHDL.Security.Encrypt(System.String)">
+            <summary>
+            This method takes a string as input and uses AES to decrypt it. 
+            </summary>
+            <param name="text">The string to be encrypted</param>
+            <returns></returns>
+        </member>
+        <member name="M:JHDL.Security.Decrypt(System.String)">
+            <summary>
+            When a string is encrypted, we also need to decrypt it. This method will decrypt strings that were encrypted with the Encrypt method. 
+            </summary>1
+            <param name="encrypted">The string that needs to be decrypted</param>
+            <returns></returns>
+        </member>
+        <member name="T:JHDL.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:JHDL.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:JHDL.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:JHDL.Properties.Resources._15400516_1283968215007013_559121300793725333_n">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:JHDL.Properties.Resources._15420854_1283962981674203_7975118974390072095_n">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
