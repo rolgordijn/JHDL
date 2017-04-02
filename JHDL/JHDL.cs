@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.Windows.Forms;
 using System.Collections.Generic;
-
+using Microsoft.VisualBasic;
 namespace JHDL
 {
     public partial class JHDL : Form
@@ -68,6 +68,23 @@ namespace JHDL
              
                 //Log exception here
             }
+        }
+
+        private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            InputDialogBox idb = new InputDialogBox("Een nieuwe rol aanmaken");
+            var result = idb.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string val = idb.text;
+                Console.WriteLine(val);
+            }
+
+        }
+
+        private void beherenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new RoleManager().Show();
         }
     }
 }

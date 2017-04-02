@@ -187,19 +187,32 @@ namespace JHDL
 
         private void editUserButton_Click(object sender, EventArgs e)
         {
-            if (validateData())
+
+            try
             {
                 Member m = getCurrentMember();
-                m.Name = nameField.Text;
-                m.Email = emailField.Text;
-                m.Password = passWordField.Text;
-                m.Phone = phoneField.Text;
-                m.Birthday = birthDayField.Value;
-                m.City = locationField.Text;
-                m.Gender = (Gender)genderField.SelectedIndex;
-                m.MemberPermissions = (MemberPermissions)MemberPermissionsField.SelectedIndex;
-
             }
+            catch (ArgumentNullException )
+            {
+
+                MessageBox.Show("Lid niet gevonden in de database, mogelijk wil u een nieuw lid toevoegen. Gebruik de 'voeg toe' knop!");
+                return;
+            }
+          
+           
+                if (validateData())
+                {
+                    Member m = getCurrentMember();
+                    m.Name = nameField.Text;
+                    m.Email = emailField.Text;
+                    m.Password = passWordField.Text;
+                    m.Phone = phoneField.Text;
+                    m.Birthday = birthDayField.Value;
+                    m.City = locationField.Text;
+                    m.Gender = (Gender)genderField.SelectedIndex;
+                    m.MemberPermissions = (MemberPermissions)MemberPermissionsField.SelectedIndex;
+                }
+            
         }
 
         private Member getCurrentMember()

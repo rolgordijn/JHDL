@@ -35,6 +35,9 @@
             this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ledenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.permissiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beherenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toevoegenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +76,8 @@
             // beheerToolStripMenuItem
             // 
             this.beheerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ledenToolStripMenuItem});
+            this.ledenToolStripMenuItem,
+            this.permissiesToolStripMenuItem});
             this.beheerToolStripMenuItem.Name = "beheerToolStripMenuItem";
             this.beheerToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.beheerToolStripMenuItem.Text = "Beheer";
@@ -93,14 +97,37 @@
             this.toevoegenToolStripMenuItem.Text = "Beheer leden";
             this.toevoegenToolStripMenuItem.Click += new System.EventHandler(this.toevoegenToolStripMenuItem_Click);
             // 
-            // Form1
+            // permissiesToolStripMenuItem
+            // 
+            this.permissiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.beherenToolStripMenuItem,
+            this.toevoegenToolStripMenuItem1});
+            this.permissiesToolStripMenuItem.Name = "permissiesToolStripMenuItem";
+            this.permissiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.permissiesToolStripMenuItem.Text = "Permissies";
+            // 
+            // beherenToolStripMenuItem
+            // 
+            this.beherenToolStripMenuItem.Name = "beherenToolStripMenuItem";
+            this.beherenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.beherenToolStripMenuItem.Text = "Beheren";
+            this.beherenToolStripMenuItem.Click += new System.EventHandler(this.beherenToolStripMenuItem_Click);
+            // 
+            // toevoegenToolStripMenuItem1
+            // 
+            this.toevoegenToolStripMenuItem1.Name = "toevoegenToolStripMenuItem1";
+            this.toevoegenToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toevoegenToolStripMenuItem1.Text = "Toevoegen";
+            this.toevoegenToolStripMenuItem1.Click += new System.EventHandler(this.toevoegenToolStripMenuItem1_Click);
+            // 
+            // JHDL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1019, 502);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "JHDL";
             this.Text = "JHDL ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -119,6 +146,9 @@
         private System.Windows.Forms.ToolStripMenuItem beheerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ledenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem permissiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem beherenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem1;
     }
 }
 

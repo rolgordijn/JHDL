@@ -99,6 +99,18 @@
     <Compile Include="FirstUserForm.Designer.cs">
       <DependentUpon>FirstUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InputDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialogBox.Designer.cs">
+      <DependentUpon>InputDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager.Designer.cs">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="JHDL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,9 @@
     <EmbeddedResource Include="FirstUserForm.resx">
       <DependentUpon>FirstUserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InputDialogBox.resx">
+      <DependentUpon>InputDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JHDL.resx">
       <DependentUpon>JHDL.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +158,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoleManager.resx">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="JHDL_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
